@@ -18,6 +18,17 @@
     src: url('../fonts/Noto_Sans_JP/NotoSansJP-Light.otf');
 }
 
+$breakpoints: ( 'sm': 'screen and (max-width: 500px)',
+'md': 'screen and (max-width: 889px)',
+'lg': 'screen and (max-width: 1000px)',
+'xl': 'screen and (max-width: 1200px)',
+) !default;
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
 $c_black: #0E0B0B;
 $c_cyan: #94E7DC;
 $c_grey: #615D5B;
@@ -267,6 +278,10 @@ body {
             .inpute_pw {
                 position: absolute;
                 top: 175px;
+                @include mq(md) {
+                    top: calc(4.375rem + ((1vw - 4px) * 20.4499));
+                    font-size: calc(0.875rem + ((1vw - 4px) * 3.272));
+                }
                 left: 35%;
                 font-size: 30px;
                 font-family: 'en_extrabold';

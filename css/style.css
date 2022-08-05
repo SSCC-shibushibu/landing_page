@@ -365,6 +365,13 @@ body .member_section .main .inpute_pw {
   z-index: 10;
 }
 
+@media screen and (max-width: 889px) {
+  body .member_section .main .inpute_pw {
+    top: calc(4.375rem + ((1vw - 4px) * 20.4499));
+    font-size: calc(0.875rem + ((1vw - 4px) * 3.272));
+  }
+}
+
 body .title_text {
   font-size: 60px;
   color: #94E7DC;
