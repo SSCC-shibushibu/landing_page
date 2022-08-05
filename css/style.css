@@ -274,7 +274,7 @@ body .gadget_section .main .left_img {
 
 @media screen and (max-width: 500px) {
   body .gadget_section .main .left_img {
-    width: 90vw;
+    width: 100vw;
     height: 400px;
   }
 }
@@ -298,12 +298,10 @@ body .gadget_section .main .left_img .sub_img_left {
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
   width: 120px;
   z-index: -4;
+  transform: rotateY(-35deg) translateY(-50%);
   -webkit-transform: rotateY(-35deg) translateY(-50%);
-          transform: rotateY(-35deg) translateY(-50%);
 }
 
 @media screen and (max-width: 500px) {
@@ -316,12 +314,10 @@ body .gadget_section .main .left_img .sub_img_right {
   position: absolute;
   top: 50%;
   right: 0;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
   width: 120px;
   z-index: -4;
+  transform: rotateY(35deg) translateY(-50%);
   -webkit-transform: rotateY(35deg) translateY(-50%);
-          transform: rotateY(35deg) translateY(-50%);
 }
 
 @media screen and (max-width: 500px) {

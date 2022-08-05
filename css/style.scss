@@ -211,7 +211,7 @@ body {
                 margin: 0 30px;
                 position: relative;
                 @include mq(sm) {
-                    width: 90vw;
+                    width: 100vw;
                     height: 400px;
                 }
                 .main_img {
@@ -229,11 +229,10 @@ body {
                     position: absolute;
                     top: 50%;
                     left: 0;
-                    transform: translateY(-50%);
-                    -webkit-transform: translateY(-50%);
                     width: 120px;
                     z-index: -4;
                     transform: rotateY(-35deg) translateY(-50%);
+                    -webkit-transform: rotateY(-35deg) translateY(-50%);
                     @include mq(sm) {
                         width: 100px;
                     }
@@ -242,11 +241,10 @@ body {
                     position: absolute;
                     top: 50%;
                     right: 0;
-                    transform: translateY(-50%);
-                    -webkit-transform: translateY(-50%);
                     width: 120px;
                     z-index: -4;
                     transform: rotateY(35deg) translateY(-50%);
+                    -webkit-transform: rotateY(35deg) translateY(-50%);
                     @include mq(sm) {
                         width: 100px;
                     }
