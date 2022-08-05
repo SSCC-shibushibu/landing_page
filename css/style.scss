@@ -235,6 +235,8 @@ body {
                     -webkit-transform: rotateY(-35deg) translateY(-50%);
                     @include mq(sm) {
                         width: 100px;
+                        transform: translateY(-50%);
+                        -webkit-transform: translateY(-50%);
                     }
                 }
                 .sub_img_right {
@@ -247,6 +249,8 @@ body {
                     -webkit-transform: rotateY(35deg) translateY(-50%);
                     @include mq(sm) {
                         width: 100px;
+                        transform: translateY(-50%);
+                        -webkit-transform: translateY(-50%);
                     }
                 }
             }

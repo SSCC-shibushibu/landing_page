@@ -307,6 +307,8 @@ body .gadget_section .main .left_img .sub_img_left {
 @media screen and (max-width: 500px) {
   body .gadget_section .main .left_img .sub_img_left {
     width: 100px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
   }
 }
 
@@ -323,6 +325,8 @@ body .gadget_section .main .left_img .sub_img_right {
 @media screen and (max-width: 500px) {
   body .gadget_section .main .left_img .sub_img_right {
     width: 100px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
   }
 }
 
