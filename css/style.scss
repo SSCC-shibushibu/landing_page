@@ -228,6 +228,7 @@ body {
             }
             .flex_div {
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: space-between;
                 align-items: center;
                 p {
@@ -237,6 +238,7 @@ body {
                 }
                 .acticities_img {
                     width: 40%;
+                    min-width: 320px;
                 }
             }
         }

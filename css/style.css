@@ -296,6 +296,8 @@ body .activities_section .main .flex_div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -312,6 +314,7 @@ body .activities_section .main .flex_div p {
 
 body .activities_section .main .flex_div .acticities_img {
   width: 40%;
+  min-width: 320px;
 }
 
 body .member_section {
