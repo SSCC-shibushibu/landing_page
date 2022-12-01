@@ -8,12 +8,16 @@ function checkPW() {
     let input_text = $('.inpute_pw').val();
     console.log(input_text);
     if (input_text === 'CPiPC1111') {
-        location.href = 'members/'
+        localStorage.setItem('pass', input_text);
+        location.href = 'members/';
     } else {
         alert('Wrong Password.');
         $('.inpute_pw').val('');
     }
 }
+
+
+
 
 $(".inpute_pw").keypress(function(e) {
     if (e.keyCode == 13) {
@@ -113,5 +117,9 @@ function checkEdit() {
         $('.list_div').css('margin', '130px 250px 50px');
     } else {
         $('.edit_view').hide();
+    }
+
+    if (localStorage.getItem('pass') != 'CPiPC1111') {
+        location.href = '../index.html';
     }
 }
