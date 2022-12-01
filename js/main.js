@@ -117,6 +117,9 @@ function checkEdit() {
         if ($(window).width() > 500) {
 
             $('.list_div').css('margin', '130px 250px 50px');
+        } else {
+
+            $('.list_div').css('margin', '130px auto 400px');
         }
     } else {
         $('.edit_view').hide();
