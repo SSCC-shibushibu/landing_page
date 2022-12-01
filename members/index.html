@@ -250,24 +250,26 @@
         <!-- edit view -->
 
         <div class="edit_view">
-            <p class="edit_text">編集画面</p>
-            <textarea class="main_input" placeholder="タイトル / 説明文 / ボタンテキスト を入力"></textarea>
-            <br>
-            <input type="text" class="second_input" placeholder="https://xxx.xx.com/  (リンクボタンのみ)">
-            <br>
-            <button onclick="addHR()">仕切り線</button>
-            <button onclick="addSectionTitle()">セクションタイトル</button>
-            <button onclick="addSectionDisc()">セクション説明</button>
-            <button onclick="addNormalText()">標準タイトル</button>
-            <button onclick="addNormalDisc()">説明テキスト</button>
-            <button onclick="addLinks()">リンク</button>
-            <button onclick="addSpace()">空白</button>
-            <br>
-            <br>
+            <div>
+                <p class="edit_text">編集画面</p>
+                <textarea class="main_input" placeholder="タイトル / 説明文 / ボタンテキスト を入力"></textarea>
+                <br>
+                <input type="text" class="second_input" placeholder="https://xxx.xx.com/  (リンクボタンのみ)">
+                <br>
+                <button onclick="addHR()">仕切り線</button>
+                <button onclick="addSectionTitle()">セクションタイトル</button>
+                <button onclick="addSectionDisc()">セクション説明</button>
+                <button onclick="addNormalText()">標準タイトル</button>
+                <button onclick="addNormalDisc()">説明テキスト</button>
+                <button onclick="addLinks()">リンク</button>
+                <button onclick="addSpace()">空白</button>
+                <br>
+                <br>
 
-            <button onclick="export_html()" class="export_button">書き出し</button>
-            <p class="alart_text"></p>
-            <button onclick="delete_html()" class="delete_button">戻す（削除）</button>
+                <button onclick="export_html()" class="export_button">書き出し</button>
+                <p class="alart_text"></p>
+                <button onclick="delete_html()" class="delete_button">戻す（削除）</button>
+            </div>
         </div>
     </main>
     <script type="text/javascript" src="../js/main.js"></script>

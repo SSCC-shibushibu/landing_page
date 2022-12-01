@@ -93,8 +93,19 @@ body {
         position: fixed;
         right: 0;
         top: 0;
+        @include mq(sm) {
+            bottom: 0;
+            height: 50vh;
+            top: 50vh;
+            max-width: calc(100vw - 80px);
+            padding: 10px 40px 10px;
+            div {
+                padding: 0 0 100px;
+            }
+        }
         background: #586693;
         width: 400px;
+        max-width: calc(100vw - 100px);
         height: 100vh;
         overflow: scroll;
         padding: 50px 50px;

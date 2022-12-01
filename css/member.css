@@ -93,9 +93,23 @@ body .edit_view {
   top: 0;
   background: #586693;
   width: 400px;
+  max-width: calc(100vw - 100px);
   height: 100vh;
   overflow: scroll;
   padding: 50px 50px;
+}
+
+@media screen and (max-width: 500px) {
+  body .edit_view {
+    bottom: 0;
+    height: 50vh;
+    top: 50vh;
+    max-width: calc(100vw - 80px);
+    padding: 10px 40px 10px;
+  }
+  body .edit_view div {
+    padding: 0 0 100px;
+  }
 }
 
 body .edit_view .edit_text {

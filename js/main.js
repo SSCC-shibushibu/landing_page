@@ -114,7 +114,10 @@ function delete_html() {
 function checkEdit() {
     if (location.href.indexOf('edit') > 0) {
         $('.edit_view').show();
-        $('.list_div').css('margin', '130px 250px 50px');
+        if ($(window).width() > 500) {
+
+            $('.list_div').css('margin', '130px 250px 50px');
+        }
     } else {
         $('.edit_view').hide();
     }
